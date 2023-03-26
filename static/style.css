@@ -1,5 +1,29 @@
-.buttons {
+html, body {
+    width: 99%;
+    height: 100%;
+}
+
+.button {
     border-radius: 8px;
-    height: 300px;
-    width: 443px;
+    height: 200px;
+    width: 220px;
+    font-family: Trebuchet MS;
+}
+
+/*Used for the title at the top of the page*/
+.head {
+    background-color: rgb(63, 126, 209);
+    width: 100%;
+    /*TODO: For some reason, height keeps duplicating itself and being annoying*/
+}
+
+/*Used so that the buttons are placed how I like them*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  /*padding: 10px;*/
+  column-gap: 20px;
+  position:absolute;
+  left: 22.75%;
+  top: 30%;
 }

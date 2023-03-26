@@ -8,9 +8,16 @@
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='/style.css') }}">
 </head>
 <body>
-    <center><h1 style = "font-family: Consolas;">Word Search</h1></center>
+<!--    I don't care what the IDE says, I don't care what the internet says, I will not stp using the center tag-->
+    <center><h1 style = "font-family: Consolas;" class="head">Word Search</h1></center>
+<div class="head"></div>
 
-    <button class = buttons>heyheyhey</button
-    
+<div class = "grid-container">
+    <center><div class="grid-item"><button class = button>Create New</button></div></center>
+    <center><div class="grid-item"><button class = button>Open File</button></div></center>
+    <!--This will open a page used to browse files saved in the browsers cookies. Users will be reminded to save those in cookies to local storage regularly.-->
+    <center><div class="grid-item"><button class = button>Browse Saved</button></div></center>
+</div>
+
 </body>
 </html>
