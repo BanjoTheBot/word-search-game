@@ -2,7 +2,13 @@
 
 html, body {
     width: 99%;
-    height: 100%;
+    height: 98%;
+    background-color: rgb(87, 86, 86);
+}
+
+/*Removes the blue colour from all links*/
+a {
+    color: inherit;
 }
 
 .button {
@@ -14,12 +20,12 @@ html, body {
 
 /*Used for the title at the top of the page*/
 .head {
-    background-color: rgb(63, 126, 209);
+    background-color: rgb(53, 93, 148);
     width: 100%;
-    height: 100px;
+    height: 70px;
     position: absolute;
     top: -54px;
-    left: 0%;
+    left: 1%;
 }
 
 /*Used so that the buttons are placed how I like them*/
@@ -31,4 +37,44 @@ html, body {
   position:absolute;
   left: 22.75%;
   top: 30%;
+}
+
+ /* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 120px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 0; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(53, 93, 148);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  font-family: Trebuchet MS;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: grey;
+}
+
+/* Style page content */
+.main {
+  margin-left: 120px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
