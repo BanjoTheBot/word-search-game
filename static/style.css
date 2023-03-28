@@ -1,3 +1,5 @@
+/* I swear to god I wouldn't be able to do any good web design if it weren't for W3Schools */
+
 html, body {
     width: 99%;
     height: 100%;
@@ -14,7 +16,10 @@ html, body {
 .head {
     background-color: rgb(63, 126, 209);
     width: 100%;
-    /*TODO: For some reason, height keeps duplicating itself and being annoying*/
+    height: 100px;
+    position: absolute;
+    top: -54px;
+    left: 0%;
 }
 
 /*Used so that the buttons are placed how I like them*/
