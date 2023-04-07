@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, request, render_template
 app = Flask(__name__)
 
 
@@ -9,6 +9,11 @@ def home():
 
 @app.route("/create", methods=["GET", "POST"])
 def create():
+    if request.method == "POST":
+        name = request.form.get("name")
+        words = request.form.get("words")
+        words_list = words.split()
+        print (words_list)
     return render_template("create.html")
 
 
