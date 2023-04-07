@@ -1,4 +1,5 @@
 /* I swear to god I wouldn't be able to do any good web design if it weren't for W3Schools */
+/* god bless John W3Schools */
 
 html, body {
     width: 99%;
@@ -11,11 +12,24 @@ a {
     color: inherit;
 }
 
+/*Formatting for text in forms*/
+label {
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+}
+
+/*Formatting for a single form, may become general form formatting if desired*/
+.form {
+  position: relative;
+  top: 100px;
+  left: 30px;
+}
+
 .button {
     border-radius: 8px;
     height: 200px;
     width: 220px;
-    font-family: Trebuchet MS;
+    /*Adding extra fonts into the line adds fallbacks, useful since Linux and Mac don't have Trebuchet MS installed automatically*/
+    font-family: Trebuchet MS, Helvetica, sans-serif;
 }
 
 /*Used for the title at the top of the page*/
@@ -59,7 +73,7 @@ a {
   font-size: 25px;
   color: black;
   display: block;
-  font-family: Trebuchet MS;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
 }
 
 /* When you mouse over the navigation links, change their color */

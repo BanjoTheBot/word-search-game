@@ -7,7 +7,7 @@ def home():
     return render_template("/index.html")
 
 
-@app.route("/create")
+@app.route("/create", methods=["GET", "POST"])
 def create():
     return render_template("create.html")
 
