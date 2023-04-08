@@ -13,7 +13,12 @@ def create():
         name = request.form.get("name")
         words = request.form.get("words")
         words_list = words.split()
-        print (words_list)
+        max_length = 8
+        row = [words_list for _ in range(8)]
+        grid = [row for x in row]
+        for i in grid:
+            for j in i:
+                 print("this is a placeholder")
     return render_template("create.html")
 
 
