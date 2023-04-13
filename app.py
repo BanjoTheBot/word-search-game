@@ -18,7 +18,11 @@ def create():
         grid = [row for x in row]
         for i in grid:
             for j in i:
-                 print("this is a placeholder")
+                grid.append([])
+            for j in words_list:
+                grid[-1].append(0)
+                print(grid)
+                     
     return render_template("create.html")
 
 
